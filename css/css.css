@@ -1,0 +1,74 @@
+
+*{
+    padding: 0px;
+}
+:root{
+    --mainColor:blue;
+}
+/* div.c{
+    margin-top: 300px;
+    margin-left: 500px;
+    perspective: 500px;
+}
+div.page{
+    position: relative;
+    font-size: 25px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 2s;
+    perspective: 400px;
+    transform-origin: right bottom;
+
+}
+div.page .face{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+div.page .front{
+    background-color: red;
+}
+div.page .back{
+    background-color: green;
+    transform: rotateY(180deg);
+}
+div.page:hover{
+    transform:translateX(-100%) rotateY(-180deg);
+} */
+.parent{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 200px;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(3,140px);
+    grid-template-rows: repeat(3,140px);
+    height: fit-content;
+    width: fit-content;
+    gap: 20px 20px;
+    background-color: antiquewhite;
+}
+.parent .one{
+    background-color: red;
+    position: relative;
+    transition: 3s linear;
+    transform-origin: top left;
+}
+.parent .one span{
+    position: absolute;
+    margin:0% 0 0 0%;
+    transform: translate(-50%,-50%);
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.parent:hover .one{
+    transform: rotate(360deg);
+}
